@@ -25,4 +25,11 @@
 
 ### Synthetic Climate Data
 
+1. データの生成: [generate_all_synthetic_data.ipynb](./notebook/synthetic_data/generate_all_synthetic_data.ipynb)
+2. 図の作成: [plot_figures.ipynb](./notebook/synthetic_data/plot_figures.ipynb)
+
 ### Community Earth System Model Large Ensemble (CESM-LE)
+
+1. データのダウンロード: [download_cesm_le_data.ipynb](./notebook/cesm_le/download_cesm_le_data.ipynb)
+2. metrics の計算: [compute_all_metrics.ipynb](./notebook/cesm_le/compute_all_metrics.ipynb)
+3. 図の作成: [plot_figures.ipynb](./notebook/cesm_le/plot_figures.ipynb)
