@@ -23,6 +23,7 @@
 ## Running experiments
 
 - Run the following notebooks in `wasserstein_internal_variability_metric (.venv)`.
+- The total data size is about 54 GB.
 
 ### Synthetic Climate Data
 
