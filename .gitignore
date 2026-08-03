@@ -24,6 +24,7 @@ server
 tmp/
 .cursorrules
 data/
+_src/
 
 # for mac
 .DS_store
