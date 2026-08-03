@@ -23,6 +23,7 @@ client
 server
 tmp/
 .cursorrules
+data/
 
 # for mac
 .DS_store
