@@ -1,9 +1,13 @@
 # Derived from code associated with:
 # "Internal Versus Forced Variability Metrics for General Circulation Models Using Information Theory"
 # Aakash Sane, Baylor Fox-Kemper, Dave Ullman
-# Source: Zenodo Version v2, https://zenodo.org/records/7992844
-# License: GPL-3.0 for the copied code portion, according to the archive README
-# (see the original archive for the authoritative terms).
+# Paper DOI: 10.1029/2023JC020101
+# Source: Zenodo v2, DOI: 10.5281/zenodo.15849583
+# https://doi.org/10.5281/zenodo.15849583
+# License: GPL-3.0 for the copied code portion, per README_and_Licenses.md
+# in the archive ("The rest of the code and data follows GPL-3.0 license.").
+# Modifications: Copyright (C) 2026 Yuki Yasuda and Shoichiro Kido.
+# See the LICENSE file in the repository root for the full GPL-3.0 text.
 
 import numpy as np
 import scipy as sp

@@ -1,3 +1,43 @@
+Copyright (C) 2026 Yuki Yasuda and Shoichiro Kido
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, version 3 of the License.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+Third-party / derived code
+--------------------------
+This repository includes code derived from software associated with:
+
+  Aakash Sane, Baylor Fox-Kemper, and Dave Ullman,
+  "Internal Versus Forced Variability Metrics for General Circulation
+  Models Using Information Theory",
+  Journal of Geophysical Research: Oceans,
+  DOI: 10.1029/2023JC020101
+
+  Code and data archive (Zenodo v2):
+  DOI: 10.5281/zenodo.15849583
+  https://doi.org/10.5281/zenodo.15849583
+
+The derived portion is primarily in:
+  src/metrics/sane2024.py
+
+According to README_and_Licenses.md in that archive, the authors state
+that (aside from certain coastal and global datasets governed by other
+policies) "The rest of the code and data follows GPL-3.0 license."
+Copyright in that derived code remains with the original authors; any
+modifications in this repository are Copyright (C) 2026 Yuki Yasuda
+and Shoichiro Kido, and the combined work is distributed under the
+GNU General Public License, version 3.
+
+The full text of the GNU General Public License, version 3, follows.
+Do not modify the license text below.
+
+
                     GNU GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
 
