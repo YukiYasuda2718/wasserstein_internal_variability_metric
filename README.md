@@ -1,10 +1,10 @@
 # Quantifying internal variability in large-ensemble climate data with the Wasserstein distance
 
-## 環境構築
+## Environment setup
 
-1. `apt-get` などで以下のライブラリがインストールされていることを確認する (`build-essential`, `libgeos-dev`, `libproj-dev`, `proj-data`)
-2. python のパッケージマネージャ `uv` がインストールされていることを確認する ([uv 公式レポジトリ](https://github.com/astral-sh/uv))
-3. レポジトリのルートディレクトリに移動してから行うこと
+1. Ensure that the following system libraries are installed (e.g., via `apt-get`): `build-essential`, `libgeos-dev`, `libproj-dev`, and `proj-data`.
+2. Ensure that the Python package manager `uv` is installed ([official uv repository](https://github.com/astral-sh/uv)).
+3. Run the following commands from the repository root directory:
 
     ```sh
     export PATH="$HOME/.local/bin:$PATH"
@@ -17,19 +17,20 @@
     poetry config virtualenvs.in-project false --local
     poetry install
 
-    poetry env info  # Path が .venv-wasserstein_internal_variability_metric であること
     python -m ipykernel install --user --name wasserstein_internal_variability_metric --display-name "wasserstein_internal_variability_metric (.venv)"
     ```
 
-## 実験方法
+## Running experiments
+
+- Run the following notebooks in `wasserstein_internal_variability_metric (.venv)`.
 
 ### Synthetic Climate Data
 
-1. データの生成: [generate_all_synthetic_data.ipynb](./notebook/synthetic_data/generate_all_synthetic_data.ipynb)
-2. 図の作成: [plot_figures.ipynb](./notebook/synthetic_data/plot_figures.ipynb)
+1. Generate data: [generate_all_synthetic_data.ipynb](./notebook/synthetic_data/generate_all_synthetic_data.ipynb)
+2. Create figures: [plot_figures.ipynb](./notebook/synthetic_data/plot_figures.ipynb)
 
 ### Community Earth System Model Large Ensemble (CESM-LE)
 
-1. データのダウンロード: [download_cesm_le_data.ipynb](./notebook/cesm_le/download_cesm_le_data.ipynb)
-2. metrics の計算: [compute_all_metrics.ipynb](./notebook/cesm_le/compute_all_metrics.ipynb)
-3. 図の作成: [plot_figures.ipynb](./notebook/cesm_le/plot_figures.ipynb)
+1. Download data: [download_cesm_le_data.ipynb](./notebook/cesm_le/download_cesm_le_data.ipynb)
+2. Compute metrics: [compute_all_metrics.ipynb](./notebook/cesm_le/compute_all_metrics.ipynb)
+3. Create figures: [plot_figures.ipynb](./notebook/cesm_le/plot_figures.ipynb)
