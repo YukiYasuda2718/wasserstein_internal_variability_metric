@@ -32,6 +32,7 @@ def calc_results_for_normal_dist(
     max_nbins: int,
     sigma: float = 1.0,
     seed: int = 42,
+    phi: float = 0.0,
 ) -> dict[str, list]:
     #
 
@@ -63,6 +64,7 @@ def calc_results_for_normal_dist(
             "sigma": sigma,
             "correlation": corr,
             "seed": seed,
+            "phi": phi,
         }
         results["corr"].append(corr)
 
@@ -128,6 +130,7 @@ def calc_results_for_uniform_dist(
     high: float = 1.0,
     low: float = -1.0,
     seed: int = 42,
+    phi: float = 0.0,
 ) -> dict[str, list]:
     #
 
@@ -160,6 +163,7 @@ def calc_results_for_uniform_dist(
             "high": high,
             "correlation": corr,
             "seed": seed,
+            "phi": phi,
         }
         results["corr"].append(corr)
 
@@ -225,6 +229,7 @@ def calc_results_for_lognormal_dist(
     mu: float = 0.0,
     sigma: float = 1.0,
     seed: int = 42,
+    phi: float = 0.0,
 ) -> dict[str, list]:
     #
 
@@ -257,6 +262,7 @@ def calc_results_for_lognormal_dist(
             "sigma": sigma,
             "rho_Y": corr,
             "seed": seed,
+            "phi": phi,
         }
         results["corr"].append(corr)
 
